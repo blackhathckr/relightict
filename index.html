@@ -1134,8 +1134,8 @@
         </section>
         <!-- end: Projects Section -->
 
-        <!-- start: India Map Section (hidden) -->
-        <section class="pxn-india-map-section section-padding" style="display:none !important; background: #0a0a0a;">
+        <!-- start: India Map Section -->
+        <section class="pxn-india-map-section" style="padding: 80px 0 0;">
           <div class="container">
             <div class="row">
               <div class="col">
@@ -1143,14 +1143,44 @@
                   <span class="sec_sub pxn-fade">Our Presence</span>
                   <h2 class="sec_title pxn-chars-reveal">Project Locations Across India</h2>
                 </div>
-                <div class="pxn-fade" style="text-align: center; padding: 60px 20px; border: 1px dashed rgba(255,255,255,0.15); border-radius: 12px; color: rgba(255,255,255,0.4); margin-top: 30px;">
-                  <p style="font-size: 18px; margin-bottom: 8px; color: rgba(255,255,255,0.6);">India Map with Project Locations</p>
-                  <p style="font-size: 14px;">Interactive map showing project locations across India</p>
+                <div class="pxn-fade" style="margin-top: 30px; border-radius: 12px; overflow: hidden;">
+                  <div id="relightMap" style="height: 500px; width: 100%; border-radius: 12px;"></div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('relightMap', {
+              center: [18.5, 76.5],
+              zoom: 5,
+              scrollWheelZoom: false
+            });
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+              attribution: '&copy; OpenStreetMap &copy; CARTO',
+              maxZoom: 19
+            }).addTo(map);
+
+            var pinIcon = L.divIcon({
+              className: 'relight-pin',
+              html: '<div style="width:14px;height:14px;background:#fbd819;border:3px solid #004e7e;border-radius:50%;box-shadow:0 0 10px rgba(251,216,25,0.6);"></div>',
+              iconSize: [14, 14],
+              iconAnchor: [7, 7]
+            });
+
+            var locations = [
+              { lat: 19.076, lng: 72.8777, name: 'Mumbai', desc: 'Headquarters & Project Hub' },
+              { lat: 12.9716, lng: 77.5946, name: 'Bangalore', desc: 'Technology & Operations Center' }
+            ];
+
+            locations.forEach(function(loc) {
+              L.marker([loc.lat, loc.lng], { icon: pinIcon })
+                .addTo(map)
+                .bindPopup('<div style="font-family:sans-serif;"><strong style="color:#004e7e;">' + loc.name + '</strong><br><span style="font-size:12px;color:#555;">' + loc.desc + '</span></div>');
+            });
+          });
+        </script>
         <!-- end: India Map Section -->
 
         <!-- start: Process Section -->
@@ -1476,7 +1506,7 @@
 
                   <div class="footer_widgets_inner">
                     <div class="pxn_footer_widget widget-nav-menu">
-                      <h2 class="footer_title">Our Services</h2>
+                      <h2 class="footer_title">ICT/Telecom Services</h2>
 
                       <ul>
                         <li><a href="services.html#enterprise-network">Enterprise IT Network</a></li>
