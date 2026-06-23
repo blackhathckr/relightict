@@ -103,16 +103,16 @@ START: Theme Default CSS
    */
   --pxn-color-common-white: #ffffff;
   --pxn-color-common-black: #000000;
-  --pxn-color-heading-primary: #063d2f;
+  --pxn-color-heading-primary: #004e7e;
   --pxn-color-text-body: #7e7e7a;
   --pxn-color-text-placeholder: rgba(126, 126, 122, 0.8);
   --pxn-color-theme-primary: #fbd819;
-  --pxn-color-theme-secondary: #063d2f;
-  --pxn-color-theme-bg-primary: #063d2f;
+  --pxn-color-theme-secondary: #004e7e;
+  --pxn-color-theme-bg-primary: #004e7e;
   --pxn-color-theme-bg-light: #f5f5f5;
   --pxn-color-theme-bg-light-2: #f3f1eb;
-  --pxn-color-grey-1: #afc2bd;
-  --pxn-color-border-1: rgba(6, 61, 47, 0.15);
+  --pxn-color-grey-1: #8fb3cc;
+  --pxn-color-border-1: rgba(0, 78, 126, 0.15);
   --pxn-color-border-2: rgba(255, 255, 255, 0.15);
   --pxn-color-border-3: rgba(18, 18, 18, 0.3);
   --pxn-color-border-4: #181034;
@@ -1540,7 +1540,7 @@ START: Theme Header CSS
 }
 .pxn-header.header-absolute {
   position: absolute;
-  background-color: rgba(6, 61, 47, 0.5);
+  background-color: rgba(0, 78, 126, 0.5);
   backdrop-filter: blur(2px);
   z-index: 98;
 }
@@ -1989,8 +1989,8 @@ START: Theme Header CSS
 .pxn-header-2.header-absolute .pxn_header_main_wrap {
   padding: 20px 30px;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(31, 80, 68, 0)), to(#063d2f));
-  background-image: linear-gradient(-90deg, rgba(31, 80, 68, 0) 0%, #063d2f 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 60, 100, 0)), to(#004e7e));
+  background-image: linear-gradient(-90deg, rgba(0, 60, 100, 0) 0%, #004e7e 100%);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pxn-header-2.header-absolute .pxn_header_main_wrap {
@@ -3455,7 +3455,7 @@ START: Slider Nav & Dot CSS
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(6, 61, 47, 0.2);
+  background-color: rgba(0, 78, 126, 0.2);
 }
 .pxn_slider-pagination .swiper-pagination-bullet-active {
   background-color: var(--pxn-color-theme-primary);
@@ -4448,7 +4448,7 @@ START: Feature CSS
   font-size: 50px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: rgba(6, 61, 47, 0.1);
+  color: rgba(0, 78, 126, 0.1);
 }
 .pxn_feature_box .feature_title {
   font-weight: var(--pxn-fw-bold);
@@ -4535,7 +4535,7 @@ START: Page Header CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(6, 61, 47, 0.8);
+  background-color: rgba(0, 78, 126, 0.8);
   z-index: -1;
   pointer-events: none;
 }
@@ -5087,7 +5087,7 @@ START: Sidebar CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(6, 61, 47, 0.8);
+  background-color: rgba(0, 78, 126, 0.8);
   z-index: -1;
 }
 .pxn_sidebar_cta .sidebar_title {
@@ -6547,8 +6547,8 @@ START: Hero Slider CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(18.27%, rgba(6, 61, 47, 0.99)), color-stop(78.85%, rgba(6, 61, 47, 0)));
-  background-image: linear-gradient(90deg, rgba(6, 61, 47, 0.99) 18.27%, rgba(6, 61, 47, 0) 78.85%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(18.27%, rgba(0, 78, 126, 0.99)), color-stop(78.85%, rgba(0, 78, 126, 0)));
+  background-image: linear-gradient(90deg, rgba(0, 78, 126, 0.99) 18.27%, rgba(0, 78, 126, 0) 78.85%);
 }
 .pxn_hero_content {
   position: relative;
@@ -6566,7 +6566,7 @@ START: Hero Slider CSS
           align-items: center;
   border: 1px solid var(--pxn-color-border-2);
   border-radius: 5px;
-  background-color: rgba(6, 61, 47, 0.5);
+  background-color: rgba(0, 78, 126, 0.5);
   backdrop-filter: blur(8px);
   font-weight: var(--pxn-fw-sbold);
   font-size: 16px;
@@ -6647,7 +6647,7 @@ START: Hero Slider CSS
   max-width: 410px;
   width: 100%;
   min-height: 330px;
-  background-color: rgba(6, 61, 47, 0.6);
+  background-color: rgba(0, 78, 126, 0.6);
   border: 1px solid var(--pxn-color-theme-primary);
   border-radius: 10px;
   display: -webkit-inline-box;
@@ -7214,8 +7214,8 @@ START: Hero CSS
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(6, 61, 47, 0)), to(rgba(6, 61, 47, 0.8)));
-  background-image: linear-gradient(180deg, rgba(6, 61, 47, 0) 40%, rgba(6, 61, 47, 0.8) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 78, 126, 0)), to(rgba(0, 78, 126, 0.8)));
+  background-image: linear-gradient(180deg, rgba(0, 78, 126, 0) 40%, rgba(0, 78, 126, 0.8) 100%);
   pointer-events: none;
 }
 .pxn-h3_hero_wrap .hero_img .shape {
@@ -7469,7 +7469,7 @@ START: We Offer CSS
   font-size: 50px;
   line-height: 1;
   letter-spacing: -0.02em;
-  color: rgba(6, 61, 47, 0.1);
+  color: rgba(0, 78, 126, 0.1);
 }
 .pxn-h1_offer_box .offer_icon {
   width: 80px;
@@ -8042,8 +8042,8 @@ START: About CSS
   top: -30px;
   inset-inline-start: -18px;
   z-index: 2;
-  -webkit-box-shadow: 0px 0px 12px 10px rgba(6, 61, 47, 0.05);
-          box-shadow: 0px 0px 12px 10px rgba(6, 61, 47, 0.05);
+  -webkit-box-shadow: 0px 0px 12px 10px rgba(0, 78, 126, 0.05);
+          box-shadow: 0px 0px 12px 10px rgba(0, 78, 126, 0.05);
 }
 .pxn-h2_about_img .pxn_circle_btn .icon {
   font-size: 20px;
@@ -8603,8 +8603,8 @@ START: Why Choose CSS
   }
 }
 .pxn-h1_feature_box {
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(30%, #1f5044), to(rgba(31, 80, 68, 0)));
-  background-image: linear-gradient(270deg, #1f5044 30%, rgba(31, 80, 68, 0) 100%);
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(30%, #003c64), to(rgba(0, 60, 100, 0)));
+  background-image: linear-gradient(270deg, #003c64 30%, rgba(0, 60, 100, 0) 100%);
   backdrop-filter: blur(10px);
   padding: 30px 30px 30px 0;
   max-width: 345px;
@@ -8672,8 +8672,8 @@ START: Why Choose CSS
   margin: 0;
 }
 .pxn-h1_feature_box.right {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(31, 80, 68, 0)), color-stop(80%, #1f5044));
-  background-image: linear-gradient(270deg, rgba(31, 80, 68, 0) 0%, #1f5044 80%);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 60, 100, 0)), color-stop(80%, #003c64));
+  background-image: linear-gradient(270deg, rgba(0, 60, 100, 0) 0%, #003c64 80%);
   padding: 30px 0 30px 30px;
 }
 .pxn-h1_feature_box.right .feature_box_head {
@@ -9241,8 +9241,8 @@ START: Team CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, right top, left top, from(#063d2f), to(rgba(6, 61, 47, 0)));
-  background-image: linear-gradient(270deg, #063d2f 0%, rgba(6, 61, 47, 0) 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#004e7e), to(rgba(0, 78, 126, 0)));
+  background-image: linear-gradient(270deg, #004e7e 0%, rgba(0, 78, 126, 0) 100%);
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
@@ -9779,8 +9779,8 @@ START: Projects CSS
   height: 100%;
   inset-inline-start: 0;
   bottom: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(54.81%, rgba(6, 61, 47, 0)), color-stop(88.94%, rgba(6, 61, 47, 0.95)));
-  background-image: linear-gradient(180deg, rgba(6, 61, 47, 0) 54.81%, rgba(6, 61, 47, 0.95) 88.94%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(54.81%, rgba(0, 78, 126, 0)), color-stop(88.94%, rgba(0, 78, 126, 0.95)));
+  background-image: linear-gradient(180deg, rgba(0, 78, 126, 0) 54.81%, rgba(0, 78, 126, 0.95) 88.94%);
   pointer-events: none;
   -webkit-transform: translateY(30px);
   -ms-transform: translateY(30px);
@@ -10168,8 +10168,8 @@ START: Pricing CSS
   top: -1px;
   width: 101%;
   height: 101%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#085844), to(#063d2f));
-  background-image: linear-gradient(180deg, #085844 0%, #063d2f 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#005a8e), to(#004e7e));
+  background-image: linear-gradient(180deg, #005a8e 0%, #004e7e 100%);
   aspect-ratio: 424/327;
   -webkit-mask-image: url(../images/shapes/pricing-header.svg);
           mask-image: url(../images/shapes/pricing-header.svg);
@@ -10667,7 +10667,7 @@ START: Testimonial CSS
 .pxn-h3_testimonial_wrap .testimonial_wrap::before {
   content: "\e942";
   font-family: var(--pxn-ff-icons);
-  color: rgba(6, 61, 47, 0.03);
+  color: rgba(0, 78, 126, 0.03);
   font-size: 610px;
   line-height: 1;
   position: absolute;
@@ -12603,8 +12603,8 @@ START: Services CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(46.15%, rgba(6, 61, 47, 0.95)), color-stop(80%, rgba(6, 61, 47, 0)));
-  background: linear-gradient(90deg, rgba(6, 61, 47, 0.95) 46.15%, rgba(6, 61, 47, 0) 80%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(46.15%, rgba(0, 78, 126, 0.95)), color-stop(80%, rgba(0, 78, 126, 0)));
+  background: linear-gradient(90deg, rgba(0, 78, 126, 0.95) 46.15%, rgba(0, 78, 126, 0) 80%);
   z-index: -1;
 }
 .pxn_service_item.feature .service_no {
@@ -12679,7 +12679,7 @@ START: Services CSS
   font-size: 50px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: rgba(6, 61, 47, 0.1);
+  color: rgba(0, 78, 126, 0.1);
 }
 .pxn_service_item .service_title {
   font-weight: var(--pxn-fw-bold);
@@ -13038,8 +13038,8 @@ START: Counter Section CSS
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40.87%, rgba(6, 61, 47, 0)), color-stop(71.15%, rgba(12, 33, 28, 0.78)));
-  background-image: linear-gradient(180deg, rgba(6, 61, 47, 0) 40.87%, rgba(12, 33, 28, 0.78) 71.15%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40.87%, rgba(0, 78, 126, 0)), color-stop(71.15%, rgba(0, 50, 80, 0.78)));
+  background-image: linear-gradient(180deg, rgba(0, 78, 126, 0) 40.87%, rgba(0, 50, 80, 0.78) 71.15%);
 }
 .pxn-h2_counters_wrap {
   max-width: 1800px;
@@ -13689,8 +13689,8 @@ START: FAQ CSS
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(19.71%, rgba(6, 61, 47, 0)), to(#063d2f));
-  background-image: linear-gradient(180deg, rgba(6, 61, 47, 0) 19.71%, #063d2f 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(19.71%, rgba(0, 78, 126, 0)), to(#004e7e));
+  background-image: linear-gradient(180deg, rgba(0, 78, 126, 0) 19.71%, #004e7e 100%);
   pointer-events: none;
 }
 .pxn_faq_cta .cta_img img {
@@ -13816,7 +13816,7 @@ START: Progress CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(50% 50% at 50% 50%, rgba(10, 104, 80, 0.95) 0%, rgba(6, 61, 47, 0.95) 100%);
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 90, 140, 0.95) 0%, rgba(0, 78, 126, 0.95) 100%);
   backdrop-filter: blur(18px);
   border-radius: 50%;
   z-index: -1;
@@ -13949,7 +13949,7 @@ START: Progress CSS
 }
 .pxn_progress {
   border: 1px solid var(--pxn-color-border-1);
-  background-color: rgba(6, 61, 47, 0.1);
+  background-color: rgba(0, 78, 126, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 50px;
   padding: 2px;
